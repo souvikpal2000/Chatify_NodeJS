@@ -190,16 +190,22 @@ input:focus{
 		display: none;
 	}
     .chat-container{
-        width: 350px;
+        width: 340px;
     }
+	.chat-main{
+		overflow-y: scroll;
+	}
     .join-container {
-        width: 350px;
+        width: 340px;
         color: #fff;
     }
     .sendBtn{
-        height: 40px;
+		height: 40px;
     }
-    .fas{
+    .send{
         display: none;
     }
+	.appName{
+		font-size: larger;
+	}
 }
