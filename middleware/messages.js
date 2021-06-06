@@ -1,11 +1,21 @@
-const moment = require("moment");
-
 const formatMessage = (username, text) => {
-    return{
-        username: username,
-        text: text,
-        time: moment().format('h:mm a')
+    const d = new Date();
+    const hours = d.getHours();
+    const minutes = d.getMinutes();
+    if(hours > 12){
+        return{
+            username: username,
+            text: text,
+            time: (hours-12)+":"+minutes+" "+"pm"
+        }
     }
+    else{
+        return{
+            username: username,
+            text: text,
+            time: hours+":"+minutes+" "+"am"
+        }
+    }  
 }
 
 module.exports = formatMessage;
