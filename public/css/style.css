@@ -81,6 +81,13 @@ a {
 .chat-sidebar ul li {
 	padding: 10px 0;
 }
+.chat-sidebar::-webkit-scrollbar {
+	display: none;
+}
+.chat-sidebar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
 .chat-messages {
 	padding: 30px;
 	max-height: 500px;
